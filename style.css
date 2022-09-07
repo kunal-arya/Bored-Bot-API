@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'mechanismoregular';
+    src: url('./font/mechanismoregular-p7ywa-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'mechanismoregular', sans-serif;
+}
