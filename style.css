@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'mechanismoregular';
     src: url('./font/mechanismoregular-p7ywa-webfont.woff') format('woff');
@@ -7,4 +11,46 @@
 
 html {
     font-family: 'mechanismoregular', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+#text-msg {
+    max-height: 50px;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+    resize: none;
+}
+
+#btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid #911D21;
+}
+
+#btn:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* After the btn click , this class will be added to body */
+
+.fun {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
